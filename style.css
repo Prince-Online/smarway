@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+header {
+	font-family: "Imperial Script", serif;
+    background-color: #333;
+    padding: 10px 0px 10px 20px;
+    color: #fff;
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+}
+
+form {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="button"] {
+    background-color: #f44336;
+}
+
+button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+button[type="submit"] {
+    background-color: #2196F3;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e88e5;
+}
+
+#updateFormContainer {
+    display: none;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+#updateForm {
+    margin: 0;
+}
+
+#currentPricesContainer {
+    margin-bottom: 20px;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.price-p {
+    font-weight: bold;
+}
+
+.price-value {
+    font-size: 16px;
+}
+
+.add-product-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.add-product-btn:hover {
+    background-color: #45a049;
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+    color: #4CAF50;
+    font-size: 18px;
+}

@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>Smartway</h1>
+        </div>
+    </div>
+</header>
+<form id="productForm">
+    <div class="form-group">
+        <p>Product Name:</p>
+        <input type="text" id="productName" name="productName" required>
+        <p>Purchase Price:</p>
+        <input type="number" id="purchasePrice" name="purchasePrice" step="0.01" required>
+        <p>Selling Price:</p>
+        <input type="number" id="sellingPrice" name="sellingPrice" step="0.01" required>
+        <button type="submit">Submit</button>
+        <button type="button" class="update-btn" onclick="showUpdateForm()">Update Existing Product</button>
+    </div>
+</form>
+
+<div id="updateFormContainer">
+    <form id="updateForm">
+        <div class="form-group">
+            <p for="searchProductName">Search Product Name:</p>
+            <input type="text" id="searchProductName" name="searchProductName" required>
+            <button type="button" class="search-btn" onclick="searchProduct()">Search</button>
+            <button class="add-product-btn" onclick="showProductForm()">Add Product</button>
+        </div>
+        
+        <div id="currentPricesContainer">
+            <h4>Current Prices</h4>
+            <div class="price-info">
+                <span class="price-p">Purchase Price:</span>
+                <span class="price-value" id="displayCurrentPurchasePrice">0</span>
+            </div>
+            <div class="price-info">
+                <span class="price-p">Selling Price:</span>
+                <span class="price-value" id="displayCurrentSellingPrice">0</span>
+            </div>
+        </div>
+
+        <div id="updateFormFields">
+            <div class="form-group">
+                <p for="updatePurchasePrice">New Purchase Price:</p>
+                <input type="number" id="updatePurchasePrice" name="updatePurchasePrice" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <p for="updateSellingPrice">New Selling Price:</p>
+                <input type="number" id="updateSellingPrice" name="updateSellingPrice" step="0.01" required>
+            </div>
+            <div class="button-group">
+                <button type="submit">Update Product</button>
+                <button type="button" onclick="hideUpdateForm()">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="message"></div>
+
+<script src="script.js"></script>
